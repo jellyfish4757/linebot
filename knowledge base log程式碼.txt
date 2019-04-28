@@ -1,0 +1,10 @@
+requests
+| where url endswith "generateAnswer"
+| project timestamp, id, name, resultCode, duration
+| parse name with *"/knowledgebases/"KbId"/generateAnswer"
+| join kind= inner (
+traces | extend id = operation_ParentId
+) on id
+| extend question = tostring(customDimensions['Question'])
+| extend answer = tostring(customDimensions['Answer'])
+| project KbId, timestamp, resultCode, duration, question, answer
