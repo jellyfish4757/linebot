@@ -1,0 +1,10 @@
+---webhook URL一直無法驗證成功，原因為python撰寫皆會出錯，
+    其意義為:無需按下“驗證”按鈕。這個“驗證”意味著驗證SSL證書。 讓我們在LINE應用程序中向您的BOT發送一些短信。然後BOT可以回复echo-text。
+    參考 https://github.com/line/line-bot-sdk-python/issues/37
+
+---連結Azure提供之QnA資料庫，實現自動語意識別、且能蒐集所有使用者發送的訊息及Bot回應，加以優化調整知識庫。
+    參考 https://www.qnamaker.ai/Edit/KnowledgeBase?kbId=ef328dd8-87a0-4fa9-9c8b-f62ee24cacaf             https://portal.azure.com/#blade/Microsoft_OperationsManagementSuite_Workspace/AnalyticsBlade/initiator/AspNetOverviewV3/scope/%7B%22resources%22%3A%5B%7B%22resourceId%22%3A%22%2Fsubscriptions%2Facb18ce3-18f6-469b-abbe-3feabfeab2bd%2FresourceGroups%2Fdatabase%2Fproviders%2Fmicrosoft.insights%2Fcomponents%2Fdatabase-ai%22%7D%5D%7D/isQueryEditorVisible/true/query/
+---QnA使用上有所限制，每分鐘只能查詢10次。
+---上傳圖片至imgur，以便 image carousel template連結讀取。
+---可隨機回應貼圖。
+---新增爬蟲抓取即時新聞功能，但資料庫出錯無法連結上=>一步步加上程式碼、除錯發現並非無法連結上，是Azure免費資料庫方案延遲極大。
