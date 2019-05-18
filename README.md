@@ -1,8 +1,19 @@
-#使用技術
-Linebot api、NLP語意分析、資料庫、基礎爬蟲、Random隨機取樣。
-Bot會動態連結至Azure資料庫進行語意分析，查找合適答案。也能夠查看所有使用者提問(參考 資料庫LOG.png)，以優化資料庫。(資料庫能夠手動新增語句也能直接上傳CSV檔)
+# LINEBOT
+---
 
-使用須知:
+## 使用技術及環境
+---
+環境 : Heroku、LINE、Azure<br>
+技術 : Linebot api、NLP語意分析、Azure資料庫、基礎爬蟲、Random隨機取樣。
+
+## 架構
+---
+<div><img width="500" height="300" src="https://github.com/StarCoral/Where_is_can/blob/master/picture/%E8%A7%92%E8%89%B2.png"/></div><br>
+Bot會動態連結至Azure資料庫進行語意分析，查找合適答案。<br>
+也能夠查看所有使用者提問(參考 資料庫LOG.png)，以優化資料庫。<br>
+(資料庫能夠手動新增語句也能直接上傳CSV檔)。
+
+## 使用須知:
 1.請把看到的所有按鈕都要點過。
 2.可以詢問電影類的問題。
 3.輸入"新聞"來得知即時資訊(預設爬取蘋果新聞)。
