@@ -2,8 +2,8 @@
 ---
 
 ## 使用技術及環境
-環境 : Heroku、LINE、Azure<br>
-技術 : Linebot api、NLP語意分析、Azure資料庫、基礎爬蟲、Random隨機取樣。
++ 環境 : Heroku、LINE、Azure<br>
++ 技術 : Linebot api、NLP語意分析、Azure資料庫、基礎爬蟲、Random隨機取樣。
 
 ## 架構
 Bot會動態連結至Azure資料庫進行語意分析，查找合適答案。<br>
@@ -31,6 +31,6 @@ HINT : <br>
 
 
 ## 期待改進方面:
-若是一直call自己的function維持喚醒狀態，即能很快回覆，卻會違反Heroku條款，須付費。<br>
-資料庫會隨使用者提問多寡而慢慢完備，初期資料庫資訊不足。(參考 資料庫data.png)<br>
-能夠增加連續對話功能。(接續上一話題)
++ 若是一直call自己的function維持喚醒狀態，即能很快回覆，卻會違反Heroku條款，須付費。<br>
++ 資料庫會隨使用者提問多寡而慢慢完備，初期資料庫資訊不足。(參考 資料庫data.png)<br>
++ 能夠增加連續對話功能。(接續上一話題)
